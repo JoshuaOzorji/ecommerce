@@ -88,7 +88,7 @@ const CheckoutForm = () => {
 	};
 
 	return (
-		<div className="flex flex-col border rounded-md p-4 justify-evenly md:text-sm sm:text-xs gap-y-2">
+		<div className="flex flex-col border rounded-lg p-4 justify-evenly md:text-sm sm:text-xs gap-y-2">
 			{succeeded ? (
 				<article>
 					<h4>Thank you</h4>
@@ -114,7 +114,7 @@ const CheckoutForm = () => {
 					id="card-element"
 					options={cardStyle}
 					onChange={handleChange}
-					className="border rounded-md py-2 mt-1"
+					className="border rounded-lg py-2 mt-1"
 				/>
 				<button
 					disabled={processing || disabled || succeeded}

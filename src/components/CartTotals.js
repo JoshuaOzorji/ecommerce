@@ -26,13 +26,13 @@ const CartTotals = () => {
 					{myUser ? (
 						<Link
 							to="/checkout"
-							className="border rounded-xl border-accent sm:py-[1px] sm:px-3 md:py-1 md:px-4 cursor-pointer hover:text-accent font-semibold md:text-base sm:text-sm">
+							className="border rounded-lg border-accent sm:py-[1px] sm:px-3 md:py-1 md:px-4 cursor-pointer hover:text-accent font-semibold md:text-base sm:text-sm">
 							Proceed to checkout
 						</Link>
 					) : (
 						<button
 							type="button"
-							className="border rounded-xl border-accent sm:py-[1px] sm:px-3 md:py-1 md:px-4 cursor-pointer hover:text-accent font-semibold md:text-base sm:text-sm"
+							className="border rounded-lg border-accent sm:py-[1px] sm:px-3 md:py-1 md:px-4 cursor-pointer hover:text-accent font-semibold md:text-base sm:text-sm"
 							onClick={loginWithRedirect}>
 							Login
 						</button>

@@ -33,7 +33,7 @@ const Filters = () => {
 							type="text"
 							name="text"
 							placeholder="search"
-							className="p-1 rounded-md border focus:border-0"
+							className="p-1 rounded-lg border focus:border-0"
 							value={text}
 							onChange={updateFilters}
 						/>
@@ -148,7 +148,7 @@ const Filters = () => {
 					<button
 						type="button"
 						onClick={clearFilters}
-						className="capitalize-first-letter bg-red-600 text-white py-1 px-2 rounded-xl">
+						className="capitalize-first-letter bg-red-600 text-white py-1 px-2 rounded-lg">
 						clear filters
 					</button>
 				</div>

@@ -7,7 +7,7 @@ const ProductImages = ({ images = [{ url: "" }] }) => {
 			<img
 				src={main.url}
 				alt="main product"
-				className="md:w-[90%] md:h-[25rem] sm:h-[20rem] sm:w-[80%] rounded-md"
+				className="md:w-[90%] md:h-[25rem] sm:h-[20rem] sm:w-[80%] rounded-lg"
 			/>
 			<div className="sm:w-[80%] md:w-[90%] grid grid-cols-5 gap-x-4 mt-2">
 				{images.map((image, index) => {
@@ -18,8 +18,8 @@ const ProductImages = ({ images = [{ url: "" }] }) => {
 							key={index}
 							onClick={() => setMain(images[index])}
 							className={`${
-								image.url === main.url ? "opacity-50 rounded-xl " : null
-							} sm:h-[45px] md:h-[75px] rounded-md shadow-lg`}
+								image.url === main.url ? "opacity-50 rounded-lg " : null
+							} sm:h-[45px] md:h-[75px] rounded-lg shadow-lg`}
 						/>
 					);
 				})}

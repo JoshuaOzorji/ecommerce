@@ -58,7 +58,7 @@ const SingleProductPage = () => {
 						<ProductImages images={images} />
 					</div>
 
-					<section className="text-gray-900 md:pl-6  bg-[#fdfdfd] md:p-8 rounded-xl md:w-1/2 px-4 md:mt-0 sm:mt-4 sm:py-6">
+					<section className="text-gray-900 md:pl-6  bg-[#fdfdfd] md:p-8 rounded-lg md:w-1/2 px-4 md:mt-0 sm:mt-4 sm:py-6">
 						<p className="flex sm:text-[12px] md:text-xs">
 							<span className="text-gray-500">Brand: </span>
 							<p className="capitalize-first-letter pl-[3px]">{company}</p>

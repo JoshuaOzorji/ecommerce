@@ -37,7 +37,7 @@
 	}
 
 	.active {
-		@apply bg-black text-white border rounded p-[2px] transition-all delay-100;
+		@apply bg-black text-white border rounded-lg p-[2px] transition-all delay-100;
 	}
 	.products-active {
 		@apply opacity-100;

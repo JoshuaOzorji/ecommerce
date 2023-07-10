@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 const Product = ({ image, name, price, id }) => {
 	return (
 		<main className="font-noto grid grid-flow-row w-full">
-			<div className="border rounded-2xl m-2 group hover:shadow-lg shadow-sm duration-300 transition-all">
+			<div className="border rounded-lg m-2 group hover:shadow-lg shadow-sm duration-300 transition-all">
 				<Link to={`/products/${id}`}>
 					<img
 						src={image}
 						alt={name}
-						className="block object-cover sm:w-full sm:h-32 md:w-[100%] md:h-64 opacity-[0.85] hover:opacity-100 rounded-2xl cursor-pointer"
+						className="block object-cover sm:w-full sm:h-32 md:w-[100%] md:h-64 opacity-[0.85] hover:opacity-100 rounded-lg cursor-pointer"
 					/>
 				</Link>
 

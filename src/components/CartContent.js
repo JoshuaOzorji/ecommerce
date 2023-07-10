@@ -14,13 +14,13 @@ const CartContent = () => {
 
 			<div className="flex justify-between mt-6 md:text-sm sm:text-xs">
 				<Link to="/products">
-					<button className="border bg-black text-white py-1 px-2 rounded-xl">
+					<button className="border bg-black text-white py-1 px-2 rounded-lg">
 						Continue shopping
 					</button>
 				</Link>
 				<button
 					type="button"
-					className="border bg-red-600 text-white py-1 px-2 rounded-xl"
+					className="border bg-red-600 text-white py-1 px-2 rounded-lg"
 					onClick={clearCart}>
 					Clear cart
 				</button>

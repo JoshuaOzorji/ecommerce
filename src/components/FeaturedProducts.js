@@ -33,7 +33,7 @@ const FeaturedProducts = () => {
 			<div className="flex justify-center my-6">
 				<Link
 					to="/products"
-					className="bg-black text-white rounded-xl p-2 inline-block shadow-sm hover:bg-accent gap-x-2 hover:text-gray-200 duration-300 transition-all md:text-base sm:text-xs">
+					className="bg-black text-white rounded-lg p-2 inline-block shadow-sm hover:bg-accent gap-x-2 hover:text-gray-200 duration-300 transition-all md:text-base sm:text-xs">
 					All Products
 				</Link>
 			</div>

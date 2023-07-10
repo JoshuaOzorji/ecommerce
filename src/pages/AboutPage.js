@@ -36,7 +36,7 @@ const AboutPage = () => {
 					<img
 						src={aboutImg}
 						alt="about-home"
-						className="rounded-xl md:shadow-xl sm:mt-6 sm:mb-3 md:mb-0 md:mt-0"
+						className="rounded-lg md:shadow-xl sm:mt-6 sm:mb-3 md:mb-0 md:mt-0"
 					/>
 				</div>
 			</section>

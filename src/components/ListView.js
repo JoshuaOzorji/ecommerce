@@ -14,7 +14,7 @@ const ListView = ({ products }) => {
 							<img
 								src={image}
 								alt={name}
-								className="sm:w-[6.25rem] sm:h-[4.37rem] md:w-[14rem] md:h-[8rem] object-cover rounded-md shadow-lg w-[25%]"
+								className="sm:w-[6.25rem] sm:h-[4.37rem] md:w-[14rem] md:h-[8rem] object-cover rounded-lg shadow-lg w-[25%]"
 							/>
 						</div>
 						<div className="w-[75%]">

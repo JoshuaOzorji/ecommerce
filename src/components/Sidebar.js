@@ -12,10 +12,10 @@ const Sidebar = () => {
 	const { myUser } = useUserContext();
 
 	return (
-		<section className="font-noto text-sm">
+		<section className="font-noto text-xl wrapper font-bold">
 			<aside
 				className={`${isSidebarOpen ? "sidebar show-sidebar " : "sidebar "}`}>
-				<div className="flex justify-between items-center ">
+				<div className="flex justify-between items-center py-2">
 					<img
 						src={logo}
 						alt="byte-crafters"
@@ -29,8 +29,8 @@ const Sidebar = () => {
 					</button>
 				</div>
 
-				<ul className="grid grid-rows-2 place-content-between">
-					<div className="flex flex-col justify-start">
+				<ul className="grid grid-rows-2 place-content-between py-2">
+					<div className="flex flex-col justify-start gap-y-2">
 						{links.map(({ id, text, url }) => {
 							return (
 								<li key={id}>

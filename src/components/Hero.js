@@ -12,7 +12,7 @@ const Hero = () => {
 						Explore our collection of currated design accessories to add to your
 						home and create a space you love
 					</p>
-					<button className="flex items-center bg-black text-white font-bold rounded-xl py-2 px-3 btn-hover">
+					<button className="flex items-center bg-black text-white font-bold rounded-lg py-2 px-3 btn-hover">
 						<p className="sm:text-xs">Explore</p>
 						<BsArrowRightShort />
 					</button>
@@ -23,7 +23,7 @@ const Hero = () => {
 					<img
 						src={heroBg}
 						alt="hero"
-						className="rounded-xl shadow-2xl border-[10px] border-white"
+						className="rounded-lg shadow-2xl border-[10px] border-white"
 					/>
 				</div>
 			</div>

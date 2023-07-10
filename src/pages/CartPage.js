@@ -16,7 +16,7 @@ const CartPage = () => {
 					<h2 className="mb-1">Your cart is empty</h2>
 					<Link
 						to="/products"
-						className="border rounded-xl border-accent sm:py-[1px] sm:px-2 md:py-1 md:px-2 cursor-pointer hover:text-accent font-semibold md:text-sm sm:text-sm">
+						className="border rounded-lg border-accent sm:py-[1px] sm:px-2 md:py-1 md:px-2 cursor-pointer hover:text-accent font-semibold md:text-sm sm:text-sm">
 						Continue shopping
 					</Link>
 				</div>
