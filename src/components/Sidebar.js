@@ -19,7 +19,7 @@ const Sidebar = () => {
 					<img
 						src={logo}
 						alt="byte-crafters"
-						className="justify-center w-10 h-10"
+						className="justify-center w-12 h-12"
 					/>
 					<button
 						type="button"

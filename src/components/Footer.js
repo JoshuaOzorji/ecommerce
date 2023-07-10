@@ -14,7 +14,7 @@ const Footer = () => {
 			<section className="md:flex justify-between  py-8">
 				<div className="flex flex-col justify-between">
 					<span className="flex items-center gap-x-2 sm:justify-start sm:pb-2 md:pb-0">
-						<img src={logo} alt="byte-crafters" className="w-10 h-10" />
+						<img src={logo} alt="byte-crafters" className="w-12 h-12" />
 						<h1 className="sm:text-base md:text-[17px] font-light ">
 							ByteCrafters
 						</h1>

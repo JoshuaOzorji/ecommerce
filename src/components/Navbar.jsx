@@ -16,7 +16,7 @@ const Navbar = () => {
 			<div className="w-full flex items-center justify-between">
 				<div className="flex items-center justify-between">
 					<Link to="/">
-						<img src={logo} alt="logo" className="delay-150 w-10 h-10" />
+						<img src={logo} alt="logo" className="delay-150 w-12 h-12" />
 					</Link>
 
 					<ul className="sm:hidden md:flex justify-center">
