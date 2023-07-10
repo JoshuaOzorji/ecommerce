@@ -7,7 +7,7 @@ const AmountButtons = ({ increase, decrease, amount }) => {
 			<button type="button" className="" onClick={decrease}>
 				<HiMiniMinusSmall className="text-lg" />
 			</button>
-			<h2 className="sm:text-sm md:text-2xl font-bold">{amount}</h2>
+			<h2 className="sm:text-base md:text-2xl font-bold">{amount}</h2>
 			<button type="button" className="" onClick={increase}>
 				<HiMiniPlusSmall className="text-lg font-thin" />
 			</button>
