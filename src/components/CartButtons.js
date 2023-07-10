@@ -2,14 +2,19 @@ import { BsCart2 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../context/cart_context";
 import { useUserContext } from "../context/user_context";
+import { useProductsContext } from "../context/products_context";
 
 const CartButtons = () => {
 	const { total_items, clearCart } = useCartContext();
 	const { loginWithRedirect, myUser, logout } = useUserContext();
+	const { closeSidebar } = useProductsContext();
 
 	return (
 		<main className="flex gap-x-4">
-			<Link to="/cart" className="flex items-center gap-x-1">
+			<Link
+				to="/cart"
+				className="flex items-center gap-x-1"
+				onClick={closeSidebar}>
 				Cart
 				<span className="flex items-center relative">
 					<BsCart2 />
