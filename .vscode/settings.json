@@ -19,5 +19,9 @@
 		"titleBar.inactiveForeground": "#e7e7e799"
 	},
 	"peacock.color": "#215732",
+<<<<<<< HEAD
 	"cSpell.words": ["crafters", "localstorage"]
+=======
+	"cSpell.words": ["crafters"]
+>>>>>>> 222741af49b5beda2025aba968638438baa7076b
 }
