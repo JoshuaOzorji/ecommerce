@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Encode+Sans+Semi+Condensed:wght@400;700;900&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,600;0,700;0,900;1,500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-listview {
+	display: block;
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 1rem;
+}
+.capitalize-first-letter::first-letter {
+	text-transform: uppercase;
+}
+
+.filter-active {
+	text-decoration: underline;
+}
+
+@layer components {
+	.wrapper {
+		@apply sm:px-2 md:px-14;
+	}
+	.gradientGreen {
+		@apply bg-gradient-to-r from-[#edede9] to-[#caf0f8];
+	}
+	.gradientGreenInverse {
+		@apply bg-gradient-to-r from-[#caf0f8] to-[#edede9];
+	}
+	.sidebar {
+		@apply fixed top-0 left-0 w-full h-[100%] bg-white transition-all ease-linear duration-500 -translate-x-full -z-10 border-r-2 sm:px-2;
+	}
+	.show-sidebar {
+		@apply translate-x-0 z-[999];
+	}
+
+	.active {
+		@apply bg-black text-white border rounded-lg p-[2px] transition-all delay-100;
+	}
+	.products-active {
+		@apply opacity-100;
+	}
+	.filter-h5 {
+		@apply capitalize-first-letter font-bold;
+	}
+	.all-btn {
+		@apply flex items-center justify-center mr-2 opacity-50;
+	}
+
+	.color-btn {
+		@apply w-4 h-4 bg-[#222] cursor-pointer  inline-block justify-center rounded-full items-center;
+	}
+
+	.btn-hover {
+		@apply hover:bg-accent gap-x-2 hover:text-gray-200 duration-300 transition-all;
+	}
+}
+
+@media (min-width: 768px) {
+	.nav-center {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		align-items: center;
+	}
+}
