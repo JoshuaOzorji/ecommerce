@@ -93,10 +93,9 @@ export const footerLinks = [
 	},
 ];
 
-export const products_url =
-	"https://cors-anywhere.herokuapp.com/https://course-api.com/react-store-products";
+export const products_url = "/api/react-store-products";
 
-export const single_product_url = `https://cors-anywhere.herokuapp.com/https://course-api.com/react-store-single-product?id=`;
+export const single_product_url = `/api/react-store-single-product?id=`;
 
 // export const products_url = "https://course-api.com/react-store-products";
 
