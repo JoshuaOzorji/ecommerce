@@ -7,20 +7,20 @@ import CartItem from "./CartItem";
 const CartContent = () => {
 	const { cart, clearCart } = useCartContext();
 	return (
-		<main className="wrapper font-noto">
+		<main className='wrapper font-noto'>
 			{cart.map((item) => {
 				return <CartItem key={item.id} {...item} />;
 			})}
 
-			<div className="flex justify-between mt-6 md:text-sm sm:text-xs">
-				<Link to="/products">
-					<button className="border bg-black text-white py-1 px-2 rounded-lg">
+			<div className='flex justify-between mt-6 md:text-sm text-xs'>
+				<Link to='/products'>
+					<button className='border bg-black text-white py-1 px-2 rounded-lg'>
 						Continue shopping
 					</button>
 				</Link>
 				<button
-					type="button"
-					className="border bg-red-600 text-white py-1 px-2 rounded-lg"
+					type='button'
+					className='border bg-red-600 text-white py-1 px-2 rounded-lg'
 					onClick={clearCart}>
 					Clear cart
 				</button>

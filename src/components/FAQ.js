@@ -1,16 +1,17 @@
 import React from "react";
-import Questions from "../components/Questions";
+import Accordion from "./Accordion";
+import { questions } from "../utils/constants";
 
 const FAQ = () => {
 	return (
-		<section className="flex flex-col items-center wrapper font-noto">
+		<main className='wrapper font-noto border-t'>
+			<h3 className='font-bold text-lg md:text-2xl my-4 text-center'>
+				Frequently Asked Questions
+			</h3>
 			<div>
-				<h3 className="font-bold sm:text-base md:text-2xl my-6 text-center">
-					Frequently Asked Questions
-				</h3>
-				<Questions />
+				<Accordion items={questions} />
 			</div>
-		</section>
+		</main>
 	);
 };
 

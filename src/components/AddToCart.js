@@ -32,9 +32,9 @@ const AddToCart = ({ product }) => {
 	};
 	return (
 		<main>
-			<div className="flex sm:text-[12px] md:text-sm items-center">
-				<span className="text-gray-500">Colors: </span>
-				<div className="flex items-center gap-x-[2px] pl-1">
+			<div className='flex text-[12px] md:text-sm items-center'>
+				<span className='text-gray-500'>Colors: </span>
+				<div className='flex items-center gap-x-[2px] pl-1'>
 					{colors.map((color, index) => {
 						return (
 							<button
@@ -45,7 +45,7 @@ const AddToCart = ({ product }) => {
 								}`}
 								onClick={() => setMainColor(color)}>
 								{mainColor === color ? (
-									<FaCheck className="text-[#444444]" />
+									<FaCheck className='text-[#444444]' />
 								) : null}
 							</button>
 						);
@@ -53,8 +53,8 @@ const AddToCart = ({ product }) => {
 				</div>
 			</div>
 
-			<div className="flex flex-col justify-start pt-4">
-				<div className="flex justify-center mb-[1px]">
+			<div className='flex flex-col justify-start pt-4'>
+				<div className='flex justify-center mb-[1px]'>
 					<AmountButtons
 						amount={amount}
 						increase={increase}
@@ -63,9 +63,9 @@ const AddToCart = ({ product }) => {
 				</div>
 
 				<Link
-					to="/cart"
+					to='/cart'
 					onClick={() => addToCart(id, mainColor, amount, product)}>
-					<p className="text-white bg-black inline-block p-2 rounded-lg sm:text-[10px] md:text-xs font-semibold btn-hover">
+					<p className='text-white bg-black inline-block p-2 rounded-lg text-[10px] md:text-xs font-semibold btn-hover'>
 						ADD TO CART
 					</p>
 				</Link>

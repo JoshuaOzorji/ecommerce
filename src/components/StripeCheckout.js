@@ -88,7 +88,7 @@ const CheckoutForm = () => {
 	};
 
 	return (
-		<div className="flex flex-col border rounded-lg p-4 justify-evenly md:text-sm sm:text-xs gap-y-2">
+		<div className='flex flex-col border rounded-lg p-4 justify-evenly md:text-sm text-xs gap-y-2'>
 			{succeeded ? (
 				<article>
 					<h4>Thank you</h4>
@@ -96,37 +96,37 @@ const CheckoutForm = () => {
 					<h4>Redirecting to home page shortly</h4>
 				</article>
 			) : (
-				<article className="flex flex-col gap-y-2">
+				<article className='flex flex-col gap-y-2'>
 					<h4>
-						Hello, <span className="font-bold">{myUser && myUser.name}</span>{" "}
+						Hello, <span className='font-bold'>{myUser && myUser.name}</span>{" "}
 					</h4>
 					<p>
 						Your total is:{" "}
-						<span className="font-bold">
+						<span className='font-bold'>
 							{formatPrice(shipping_fee + total_amount)}
 						</span>
 					</p>
-					<p className="text-accent">Test Card Number : 4242 4242 4242 4242</p>
+					<p className='text-accent'>Test Card Number : 4242 4242 4242 4242</p>
 				</article>
 			)}
-			<form id="payment-form" onSubmit={handleSubmit} className="">
+			<form id='payment-form' onSubmit={handleSubmit} className=''>
 				<CardElement
-					id="card-element"
+					id='card-element'
 					options={cardStyle}
 					onChange={handleChange}
-					className="border rounded-lg py-2 mt-1"
+					className='border rounded-lg py-2 mt-1'
 				/>
 				<button
 					disabled={processing || disabled || succeeded}
-					id="submit"
-					className="items-center md:text-base border px-2 mt-2 cursor-pointer bg-black text-white rounded-lg py-1 btn-hover">
-					<span id="button-text">
-						{processing ? <div className="spinner" id="spinner"></div> : "Pay"}
+					id='submit'
+					className='items-center md:text-base border px-2 mt-2 cursor-pointer bg-black text-white rounded-lg py-1 btn-hover'>
+					<span id='button-text'>
+						{processing ? <div className='spinner' id='spinner'></div> : "Pay"}
 					</span>
 				</button>
 				{/* Show any error that happens when the processing the payment request */}
 				{error && (
-					<div className="card-error" role="alert">
+					<div className='card-error' role='alert'>
 						{error}
 					</div>
 				)}
@@ -150,7 +150,7 @@ const CheckoutForm = () => {
 
 const StripeCheckout = () => {
 	return (
-		<main className="">
+		<main className=''>
 			<Elements stripe={promise}>
 				<CheckoutForm />
 			</Elements>

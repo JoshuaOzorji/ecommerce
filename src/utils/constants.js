@@ -97,9 +97,10 @@ export const footerLinks = [
 
 // export const single_product_url = `/react-store-single-product?id=`;
 
-// export const products_url = "https://course-api.com/react-store-products";
+export const products_url = "https://course-api.com/react-store-products";
 
-// export const single_product_url = `https://course-api.com/react-store-single-product?id=`;
+export const single_product_url = `https://course-api.com/react-store-single-product?id=`;
 
-export const products_url = "/.netlify/functions/proxy/react-store-products";
-export const single_product_url = `/.netlify/functions/proxy/react-store-single-product?id=`;
+// export const products_url = "/.netlify/functions/proxy/react-store-products";
+// export const single_product_url = `/.netlify/functions/proxy/react-store-single-product?id=`;
+

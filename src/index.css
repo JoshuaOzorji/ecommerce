@@ -21,7 +21,7 @@
 
 @layer components {
 	.wrapper {
-		@apply sm:px-2 md:px-14;
+		@apply px-2 md:px-14;
 	}
 	.gradientGreen {
 		@apply bg-gradient-to-r from-[#edede9] to-[#caf0f8];
@@ -30,7 +30,7 @@
 		@apply bg-gradient-to-r from-[#caf0f8] to-[#edede9];
 	}
 	.sidebar {
-		@apply fixed top-0 left-0 w-full h-[100%] bg-white transition-all ease-linear duration-500 -translate-x-full -z-10 border-r-2 sm:px-2;
+		@apply fixed top-0 left-0 w-full h-[100%] bg-white transition-all ease-linear duration-500 -translate-x-full -z-10 border-r-2 px-2;
 	}
 	.show-sidebar {
 		@apply translate-x-0 z-[999];

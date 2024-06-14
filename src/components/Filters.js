@@ -24,36 +24,36 @@ const Filters = () => {
 	const colors = getUniqueValues(all_products, "colors");
 
 	return (
-		<main className="h-full">
-			<section className="md:sticky top-0 font-noto sm:text-xs md:text-sm border-b pb-2">
+		<main className='h-full'>
+			<section className='md:sticky top-0 font-noto text-xs md:text-sm border-b pb-2'>
 				<form onSubmit={(e) => e.preventDefault()}>
 					{/* search input */}
-					<div className="py-2">
+					<div className='py-2'>
 						<input
-							type="text"
-							name="text"
-							placeholder="search"
-							className="p-1 rounded-lg border focus:border-0"
+							type='text'
+							name='text'
+							placeholder='search'
+							className='p-1 rounded-lg border focus:border-0'
 							value={text}
 							onChange={updateFilters}
 						/>
 					</div>
 
 					{/* categories */}
-					<div className="mb-2">
-						<h5 className="filter-h5">category</h5>
+					<div className='mb-2'>
+						<h5 className='filter-h5'>category</h5>
 						<div>
 							{categories.map((c, index) => {
 								return (
 									<button
 										key={index}
 										onClick={updateFilters}
-										type="button"
-										name="category"
+										type='button'
+										name='category'
 										className={`${
 											category === c.toLowerCase() ? "filter-active " : null
 										}`}>
-										<p className="pr-2 capitalize-first-letter block">{c}</p>
+										<p className='pr-2 capitalize-first-letter block'>{c}</p>
 									</button>
 								);
 							})}
@@ -61,13 +61,13 @@ const Filters = () => {
 					</div>
 
 					{/* companies */}
-					<div className="mb-2">
-						<h5 className="filter-h5">company</h5>
+					<div className='mb-2'>
+						<h5 className='filter-h5'>company</h5>
 						<select
-							name="company"
+							name='company'
 							value={company}
 							onChange={updateFilters}
-							className="">
+							className=''>
 							{companies.map((c, index) => {
 								return (
 									<option key={index} value={c}>
@@ -79,17 +79,17 @@ const Filters = () => {
 					</div>
 
 					{/* colors */}
-					<div className="mb-2">
-						<h5 className="filter-h5">colors</h5>
-						<div className="flex items-center gap-x-1">
+					<div className='mb-2'>
+						<h5 className='filter-h5'>colors</h5>
+						<div className='flex items-center gap-x-1'>
 							{colors.map((c, index) => {
 								if (c === "all") {
 									return (
 										<button
 											key={index}
-											name="color"
+											name='color'
 											onClick={updateFilters}
-											data-color="all"
+											data-color='all'
 											className={`${
 												color === "all" ? "all-btn products-active" : "all-btn"
 											}`}>
@@ -100,14 +100,14 @@ const Filters = () => {
 								return (
 									<button
 										key={index}
-										name="color"
+										name='color'
 										style={{ background: c }}
 										className={`${
 											color === c ? "color-btn products-active" : "color-btn"
 										}`}
 										data-color={c}
 										onClick={updateFilters}>
-										{color === c ? <FaCheck className="text-white" /> : null}
+										{color === c ? <FaCheck className='text-white' /> : null}
 									</button>
 								);
 							})}
@@ -115,12 +115,12 @@ const Filters = () => {
 					</div>
 
 					{/* price */}
-					<div className="">
-						<h5 className="filter-h5">price</h5>
+					<div className=''>
+						<h5 className='filter-h5'>price</h5>
 						<p>{formatPrice(price)}</p>
 						<input
-							type="range"
-							name="price"
+							type='range'
+							name='price'
 							min={min_price}
 							max={max_price}
 							onChange={updateFilters}
@@ -129,14 +129,14 @@ const Filters = () => {
 					</div>
 
 					{/* shipping */}
-					<div className="flex items-center gap-x-1 mb-2">
-						<label htmlFor="shipping" className="capitalize-first-letter">
+					<div className='flex items-center gap-x-1 mb-2'>
+						<label htmlFor='shipping' className='capitalize-first-letter'>
 							free shipping
 						</label>
 						<input
-							type="checkbox"
-							name="shipping"
-							id="shipping"
+							type='checkbox'
+							name='shipping'
+							id='shipping'
 							onChange={updateFilters}
 							checked={shipping}
 						/>
@@ -144,11 +144,11 @@ const Filters = () => {
 				</form>
 
 				{/* clear filters */}
-				<div className="pt-2">
+				<div className='pt-2'>
 					<button
-						type="button"
+						type='button'
 						onClick={clearFilters}
-						className="capitalize-first-letter bg-red-600 text-white py-1 px-2 rounded-lg">
+						className='capitalize-first-letter bg-red-600 text-white py-1 px-2 rounded-lg'>
 						clear filters
 					</button>
 				</div>

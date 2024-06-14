@@ -48,36 +48,36 @@ const SingleProductPage = () => {
 		product;
 
 	return (
-		<main className="font-noto">
-			<div className="gradientGreen wrapper py-1 capitalize-first-letter">
+		<main className='font-noto'>
+			<div className='gradientGreen wrapper py-1 capitalize-first-letter'>
 				<PageHero title={name} product />
 			</div>
-			<section className="wrapper mt-8">
-				<div className="flex sm:flex-col md:flex-row">
-					<div className="md:w-1/2">
+			<section className='wrapper mt-8'>
+				<div className='flex flex-col md:flex-row'>
+					<div className='md:w-1/2'>
 						<ProductImages images={images} />
 					</div>
 
-					<section className="text-gray-900 md:pl-6  bg-[#fdfdfd] md:p-8 rounded-lg md:w-1/2 px-4 md:mt-0 sm:mt-4 sm:py-6">
-						<p className="flex sm:text-[12px] md:text-xs">
-							<span className="text-gray-500">Brand: </span>
-							<p className="capitalize-first-letter pl-[3px]">{company}</p>
+					<section className='text-gray-900 md:pl-6  bg-[#fdfdfd] md:p-8 rounded-lg md:w-1/2 px-4 md:mt-0 mt-4 py-6'>
+						<p className='flex text-[12px] md:text-xs'>
+							<span className='text-gray-500'>Brand: </span>
+							<p className='capitalize-first-letter pl-[3px]'>{company}</p>
 						</p>
-						<div className="flex items-center text-center justify-between sm:text-[14px] md:text-[16px] md:py:2">
-							<h2 className="capitalize-first-letter font-bold">{name}</h2>
+						<div className='flex items-center text-center justify-between text-[14px] md:text-[16px] md:py:2'>
+							<h2 className='capitalize-first-letter font-bold'>{name}</h2>
 
-							<h5 className="font-bold md:flex">{formatPrice(price)}</h5>
+							<h5 className='font-bold md:flex'>{formatPrice(price)}</h5>
 						</div>
 
 						<Stars stars={stars} reviews={reviews} />
 
-						<p className="my-5 sm:text-[12px] md:text-sm">{description}</p>
-						<p className="md:text-sm sm:text-[12px]">
-							<span className="text-gray-500">Available: </span>
+						<p className='my-5 text-[12px] md:text-sm'>{description}</p>
+						<p className='md:text-sm text-[12px]'>
+							<span className='text-gray-500'>Available: </span>
 							{stock > 0 ? "In stock" : "Out of stock"}
 						</p>
 
-						<div className="flex items-center">
+						<div className='flex items-center'>
 							{stock > 0 && <AddToCart product={product} />}
 						</div>
 					</section>

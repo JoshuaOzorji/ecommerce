@@ -40,7 +40,8 @@ export const ProductsProvider = ({ children }) => {
 	const fetchProducts = async (url) => {
 		dispatch({ type: GET_PRODUCTS_BEGIN });
 		try {
-			const response = await axios.get(url);
+			// const response = await axios.get(url);
+			const response = await axios.get("/react-store-products");
 			const products = response.data;
 			dispatch({ type: GET_PRODUCTS_SUCCESS, payload: products });
 		} catch (error) {
@@ -51,7 +52,9 @@ export const ProductsProvider = ({ children }) => {
 	const fetchSingleProduct = async (url) => {
 		dispatch({ type: GET_SINGLE_PRODUCT_BEGIN });
 		try {
-			const response = await axios.get(url);
+			// const response = await axios.get(url);
+			// eslint-disable-next-line no-undef
+			const response = await axios.get(`/react-store-single-product?id=${id}`);
 			const singleProduct = response.data;
 			dispatch({ type: GET_SINGLE_PRODUCT_SUCCESS, payload: singleProduct });
 		} catch (error) {

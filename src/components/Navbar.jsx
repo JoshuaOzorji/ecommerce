@@ -12,42 +12,42 @@ const Navbar = () => {
 	const { myUser } = useUserContext();
 
 	return (
-		<nav className="flex items-center justify-between wrapper sm:py-2 md:py-4 font-abel font-semibold text-lg">
-			<div className="w-full flex items-center justify-between">
-				<div className="flex items-center justify-between">
-					<Link to="/">
-						<img src={logo} alt="logo" className="delay-150 w-12 h-12" />
+		<nav className='flex items-center justify-between wrapper py-2 md:py-4 font-abel font-semibold text-lg'>
+			<div className='w-full flex items-center justify-between'>
+				<div className='flex items-center justify-between'>
+					<Link to='/'>
+						<img src={logo} alt='logo' className='delay-150 w-12 h-12' />
 					</Link>
 
-					<ul className="sm:hidden md:flex justify-center">
+					<ul className='hidden md:flex justify-center'>
 						{links.map((link) => {
 							const { id, text, url } = link;
 							return (
-								<li key={id} className="mx-2">
+								<li key={id} className='mx-2'>
 									<Link to={url}>{text}</Link>
 								</li>
 							);
 						})}
 
-						<div className="sm:hidden md:flex gap-x-2">
+						<div className='hidden md:flex gap-x-2'>
 							{myUser && (
 								<li>
-									<Link to="/checkout">Checkout</Link>
+									<Link to='/checkout'>Checkout</Link>
 								</li>
 							)}
 						</div>
 					</ul>
 				</div>
 
-				<div className="">
+				<div className=''>
 					<button
-						type="button"
+						type='button'
 						onClick={openSidebar}
-						className="md:hidden sm:visible cursor-pointer bg-white">
-						<HiMenuAlt3 className="h-8 w-8" />
+						className='md:hidden visible cursor-pointer bg-white'>
+						<HiMenuAlt3 className='h-8 w-8' />
 					</button>
 
-					<div className="md:flex sm:hidden">
+					<div className='md:flex hidden'>
 						<CartButtons />
 					</div>
 				</div>

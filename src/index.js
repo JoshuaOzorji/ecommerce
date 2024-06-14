@@ -19,16 +19,16 @@ root.render(
 		authorizationParams={{
 			redirect_uri: window.location.origin,
 		}}>
+		{/* <ThemeProvider> */}
 		<UserProvider>
 			<ProductsProvider>
 				<FilterProvider>
 					<CartProvider>
-						{/* <ThemeProvider> */}
 						<App />
-						{/* </ThemeProvider> */}
 					</CartProvider>
 				</FilterProvider>
 			</ProductsProvider>
 		</UserProvider>
+		{/* </ThemeProvider> */}
 	</Auth0Provider>,
 );

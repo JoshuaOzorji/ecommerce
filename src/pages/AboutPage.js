@@ -3,17 +3,17 @@ import PageHero from "../components/PageHero";
 import aboutImg from "../assets/img/about-home.jpg";
 const AboutPage = () => {
 	return (
-		<main className="font-noto ">
-			<div className="gradientGreen wrapper py-1">
-				<PageHero title="About" />
+		<main className='font-noto '>
+			<div className='gradientGreen wrapper py-1'>
+				<PageHero title='About' />
 			</div>
 
-			<section className="wrapper flex sm:flex-col md:flex-row gap-x-12 items-center md:pt-10">
-				<div className="md:w-1/2 sm:order-last md:order-first">
-					<h1 className="font-bold sm:text-2xl md:text-4xl sm:pb-2 md:pb-4">
+			<section className='wrapper flex flex-col md:flex-row gap-x-12 items-center md:pt-10'>
+				<div className='md:w-1/2 order-last md:order-first'>
+					<h1 className='font-bold text-2xl md:text-4xl pb-2 md:pb-4'>
 						About Us
 					</h1>
-					<p className="md:leading-8 sm:leading-6 sm:text-sm md:text-lg">
+					<p className='md:leading-8 leading-6 text-sm md:text-lg'>
 						ByteCrafters is the ultimate destination for all your furniture
 						needs. We are dedicated to providing you with exceptional products
 						and unmatched customer service. With a wide range of high-quality
@@ -32,11 +32,11 @@ const AboutPage = () => {
 						transform your space into a haven of style and comfort.
 					</p>
 				</div>
-				<div className="md:w-1/2 sm:order-first md:order-last">
+				<div className='md:w-1/2 order-first md:order-last'>
 					<img
 						src={aboutImg}
-						alt="about-home"
-						className="rounded-lg md:shadow-xl sm:mt-6 sm:mb-3 md:mb-0 md:mt-0"
+						alt='about-home'
+						className='rounded-lg md:shadow-xl mt-6 mb-3 md:mb-0 md:mt-0'
 					/>
 				</div>
 			</section>
